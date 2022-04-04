@@ -279,7 +279,7 @@ display(df)
 ```
 4. Check if new column exists
 
-## Task 6: SQL
+## Task 5: SQL
 1. Create a temporary view:
 ```
 df.createOrReplaceTempView("coviddata")
