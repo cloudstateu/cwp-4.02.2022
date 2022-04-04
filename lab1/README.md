@@ -244,7 +244,7 @@ display(new_deaths_by_months)
 ```
 17. Now we can joint two dataframes and see new deaths per month in largest countries in December 2021:
 ```
-joined = top_100_largest.join(new_cases_by_months, top_100_largest.iso_code == new_cases_by_months.iso_code)
+joined = top_100_largest.join(new_deaths_by_months, top_100_largest.iso_code == new_deaths_by_months.iso_code)
 display(joined.where(col("year-month") == "2021-12"))
 ```
 18. Draw a map like this:
